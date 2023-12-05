@@ -10,7 +10,7 @@ import vlc  # Importing the vlc module for audio and video playback
 
 engine = pyttsx3.init('sapi5')  # Initializing the pyttsx3 engine for speech synthesis
 voices = engine.getProperty('voices')  # Retrieving the available voices
-engine.setProperty('voice', voices[0].id)  # Setting the voice property (commented out)
+engine.setProperty('voice', voices[0].id)  # Setting the voice property
 
 # Function to speak out the provided 'audio' string
 def speak(audio):
